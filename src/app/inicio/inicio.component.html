@@ -85,6 +85,9 @@
             <small class="text-muted">Tema: {{tema.tema.descricao}}</small>
             <p class="card-text mt-3">{{tema.texto}}</p>
             <p class="card-text"><small class="text-muted">{{tema.data | date: 'dd/MM/yyyy'}} às {{tema.data | date: 'HH:mm'}}</small></p>
+
+            <a [routerLink]="['/postagem-edit',tema.id]" class="text-info me-3" href="">Editar</a>
+            <a [routerLink]="['/postagem-delete', tema.id]" class="text-danger" href="">Apagar</a>
             
           </div>
 
